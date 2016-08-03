@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8">
   <title>Video Watcher</title>
-  <link rel="stylesheet" type="text/css" href="http://teaching-materials.org/ajax/lib/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <style type="text/css">
   /* This puts titles always on a separate line from thumbnails */
   #videos-list img {
@@ -14,13 +14,13 @@
  <body>
 
 <div class="container">
- 
+
  <div class="row">
    <div class="span12">
     <h2 class="page-header">Best Videos Ever ❤</h2>
    </div>
  </div>
- 
+
  <div class="row">
    <div class="span3">
      <ul id="videos-list">
@@ -31,8 +31,13 @@
  </div>
 </div>
 
+<<<<<<< HEAD
 <script type="text/javascript" src="lib/youtube.js"></script>
 <script type="text/javascript" src="lib/jquery.min.js"></script>
+=======
+ <script type="text/javascript" src="lib/youtube.js"></script>
+ <script type="text/javascript" src="lib/jquery.min.js"></script>
+>>>>>>> f75fc989a732cba8aa59193d2e029d9424d6bf63
  <script>
 
  var videos = [
@@ -62,7 +67,7 @@
     var thumbnailImg = $('<img>');
     thumbnailImg.attr('src', thumbnailUrl);
     videoLink.append(thumbnailImg);
-    
+
     videoLink.on('click', function(e) {
         e.preventDefault();
 
